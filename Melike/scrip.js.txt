@@ -88,8 +88,9 @@ function yesClick() {
   launchConfetti();
 
   const music = document.getElementById("bgMusic");
-  music.volume = 0.4;
-  music.play();
+music.src = "music.mp3";
+music.volume = 0.5;
+music.play();
 
   passwordBox.classList.add("hidden");
   q1.classList.add("hidden");
@@ -138,3 +139,4 @@ function handleEnter() {
     yesClick();
   }
 }
+
