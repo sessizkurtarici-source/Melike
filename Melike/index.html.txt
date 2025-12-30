@@ -1,0 +1,46 @@
+<audio id="bgMusic" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<div class="box" id="passwordBox">
+  <h2>🔐 Hadi Başlayalım</h2>
+  <p>Önce Şifreyi Gir</p>
+  <input type="password" id="password">
+  <br>
+  <button onclick="checkPassword()">Giriş 💖</button>
+</div>
+
+<div class="box hidden" id="q1">
+  <h3>1️⃣ En sevdiğim şey ne?</h3>
+  <input id="answer1" placeholder="Cevabını yaz">
+  <br>
+  <button onclick="checkQ1()">Cevapla</button>
+</div>
+
+<div class="box hidden" id="q2">
+  <h3>2️⃣ Asla sıkılmayacağım şey?</h3>
+  <button class="option" onclick="wrong()">Anime izlemek</button>
+  <button class="option" onclick="right()">Melike'yle vakit geçirmek ❤️</button>
+</div>
+
+<div class="box hidden" id="q3">
+  <h3>3️⃣ Benimle evlenir misin? 💍</h3>
+  <div class="btn-area">
+    <button class="green" id="yesBtn" onclick="yesClick()">EVET 💚</button>
+    <button class="red" id="noBtn" onclick="noClick()">HAYIR ❤️‍🔥</button>
+  </div>
+</div>
+
+<div class="box hidden" id="final">
+  <h1>💗🌹</h1>
+  <h2>
+    Canım yaa 🫂🫂🫂
+    <br>
+    evet diyeceğini biliyordum 🤗🔪<br><br>
+    <strong>
+      seniiiii çoooooooook seviyorummmmmmmmm<br>
+      Melike'mmmmmmmm 🥰
+    </strong>
+  </h2>
+</div>
+
