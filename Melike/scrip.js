@@ -1,4 +1,4 @@
-const noTexts = ["Hayır", "Emin misin?", "Gerçekten mi?", "Son kararın mı?", "Lütfen... 🥺", "Bak pişman olursun!", "Üzülürüm ama..."];
+const noTexts = ["Hayır", "Emin misin?", "Gerçekten mi?", "Lütfen... 🥺", "Son kararın mı?"];
 let noCount = 0;
 
 // Elementlerin Seçilmesi
@@ -111,3 +111,4 @@ document.addEventListener("keydown", (e) => {
         else if (!q1.classList.contains("hidden")) checkQ1();
     }
 });
+
