@@ -1,87 +1,107 @@
 body {
-  margin:0;
-  font-family:'Segoe UI',sans-serif;
-  background:linear-gradient(135deg,#fc8dc5,#de4591);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  overflow:hidden;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fc8dc5, #de4591);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* Arka plan süslemeleri */
 body::before {
-  content:"❤️ ✨ 🌸 💖 🎀 🐰 ⭐ 🌷";
-  position:fixed;
-  top:0; left:0; right:0; bottom:0;
-  font-size:150px;
-  opacity:0.49;
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  animation:floatBg 10s linear infinite;
-  pointer-events:none;
+  content: "❤️ ✨ 🌸 💖 🎀 🐰 ⭐ 🌷";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  font-size: 40px;
+  opacity: 0.2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  animation: floatBg 10s linear infinite;
+  pointer-events: none;
+  z-index: -1;
 }
 
 @keyframes floatBg {
-  0% {transform: translateY(10px);}
-  50%{transform: translateY(-70px);}
-  100%{transform: translateY(10px);}
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0px); }
 }
 
 .box {
-  background: rgba(250,250,250,0.95);
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   max-width: 400px;
-  width: 90%;
+  width: 85%;
   text-align: center;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 10;
 }
 
-.hidden {display:none;}
+.hidden { display: none !important; }
 
-input {padding:10px;width:80%;border-radius:10px;border:1px solid #ccc;margin-bottom:10px;}
+input {
+  padding: 12px;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #ffafcc;
+  margin-bottom: 15px;
+  outline: none;
+}
 
 button {
-  padding:15px 26px;
-  border:none;
-  background:#f54eb5;
-  border-radius:12px;
-  font-size:16px;
-  cursor:pointer;
-  margin:5px;
-  transition: all 0.6s ease;
+  padding: 15px 25px;
+  border: none;
+  background: #f54eb5;
+  color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-.option {background:#ffe4ec;}
-.green {background:#4CAF50;color:white;}
-.red {background:#f44336;color:white;position:absolute;}
-.btn-area {position:relative;height:200px;}
+button:hover { transform: scale(1.05); background: #de4591; }
 
-.confetti {position:fixed;width:30px;height:20px;left:50%;top:50%;transform-origin:center;animation:explode 2.4s ease-out forwards;}
+.option { background: #ffe4ec; color: #de4591; }
 
-@keyframes explode {
-  to {transform:translate(var(--x),var(--y)) rotate(720deg);opacity:0;}
+.green { background: #4CAF50; }
+.red { background: #f44336; position: absolute; }
+
+.btn-area {
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confetti {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  z-index: 1000;
+  border-radius: 2px;
 }
 
 .fullscreen {
   position: fixed;
-  inset:0;
-  background:#4CAF50;
-  color:white;
-  font-size:48px;
-  font-weight:bold;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:9999;
-  cursor:pointer;
-  animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {transform:scale(1);}
-  50% {transform:scale(1.05);}
-  100%{transform:scale(1);}
+  inset: 0;
+  background: #4CAF50;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
 }
