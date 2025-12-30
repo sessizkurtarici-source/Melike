@@ -1,6 +1,4 @@
-<audio id="bgMusic" loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-</audio>
+<audio id="bgMusic" loop></audio>
 
 <div class="box" id="passwordBox">
   <h2>🔐 Hadi Başlayalım</h2>
@@ -43,4 +41,5 @@
     </strong>
   </h2>
 </div>
+
 
